@@ -7,7 +7,7 @@
     "info": {
       "name": "Replay",
       "id": "replay",
-      "version": "0.5.1",
+      "version": "0.5.2",
       "url": null,
       "additionalData": {
         "overrideSoName": "libreplay.so",

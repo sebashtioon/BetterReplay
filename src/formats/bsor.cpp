@@ -502,7 +502,7 @@ std::shared_ptr<Replay::Data> Parsing::ReadBSOR(std::string const& path) {
     // need to do after parsing poses
     replay->info.quit = flags.contains("quit");
     // set so we know that having quit is possible, since older replays won't have the file name
-    replay->info.quitTime = replay->poses.back().time;
+    replay->info.quitTime = replay->poses.empty() ? 0 : replay->poses.back().time;
 
     replay->info.hash = GetFullHash(input);
 
