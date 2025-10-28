@@ -1,9 +1,9 @@
 {
   "$schema": "https://raw.githubusercontent.com/Lauriethefish/QuestPatcher.QMod/main/QuestPatcher.QMod/Resources/qmod.schema.json",
   "_QPVersion": "0.1.1",
-  "name": "${mod_name}",
+  "name": "BetterReplay",
   "id": "${mod_id}",
-  "author": "Metalit",
+  "author": "sebashtioon & Metalit",
   "version": "${version}",
   "modloader": "Scotland2",
   "packageId": "com.beatgames.beatsaber",
