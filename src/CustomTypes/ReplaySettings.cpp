@@ -250,7 +250,7 @@ void RenderSettings::DidActivate(bool firstActivation, bool addedToHierarchy, bo
     bitrateSlider->isInt = true;
     bitrateSlider->text->text = bitrateSlider->TextForValue(bitrateSlider->get_Value());
 
-    AddConfigValueIncrementFloat(graphics, getConfig().FOV, 0, 5, 30, 90);
+    AddConfigValueIncrementFloat(graphics, getConfig().FOV, 0, 5, 30, 120);
 
     AddConfigValueIncrementInt(graphics, getConfig().FPS, 5, 5, 120);
 
