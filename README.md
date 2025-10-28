@@ -30,19 +30,15 @@ Watch back your best scores (better)!
 
 ## Building
 
-- 1. Make your changes in the source files.
+1. Open a terminal in the project root.
 
-- 2. Open a terminal in the project root.
+2. Rebuild the .so library:
+`pwsh ./scripts/build.ps1`
 
-- 3. Rebuild the .so library:
-pwsh ./scripts/build.ps1
+3. Update the .qmod file (if you changed metadata like version, name, or cover image):
+`pwsh ./scripts/createqmod.ps1`
 
-- 4. Update the .qmod file (if you changed metadata like version, name, or cover image):
-pwsh ./scripts/createqmod.ps1
+4. Replace the old mod in MBF with the newly generated .qmod file.
 
-- 5. Replace the old mod in your Quest/PC mods folder with the newly generated .qmod file.
-
-- 6. Launch the game and test your changes.
-
-Note: You only need to re-run CMake or change build configurations if you add new source files or alter build settings. For most tweaks, steps 3–5 are enough.
+Note: You only need to re-run CMake or change build configurations if you add new source files or alter build settings. For most tweaks, steps 3–4 are enough.
 
