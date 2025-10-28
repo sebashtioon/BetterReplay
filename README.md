@@ -18,7 +18,7 @@ Watch back your best scores (better)!
   - Enable "Allow Pauses" in the rendering section of the mod settings before starting the render and exit through the pause menu.
   - If you started the render without that setting enabled, you can exit the game through the Quest menu, but the output will not be saved.
 
-# Credits
+## Credits
 
 [Metalit](https://github.com/Metalit) for making the original Replay mod
 
