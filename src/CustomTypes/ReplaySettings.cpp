@@ -252,7 +252,7 @@ void RenderSettings::DidActivate(bool firstActivation, bool addedToHierarchy, bo
 
     AddConfigValueIncrementFloat(graphics, getConfig().FOV, 0, 5, 30, 120);
 
-    AddConfigValueIncrementInt(graphics, getConfig().FPS, 5, 5, 120);
+    AddConfigValueIncrementInt(graphics, getConfig().FPS, 5, 5, 1024);
 
     AddConfigValueToggle(rendering, getConfig().Pauses);
 
