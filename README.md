@@ -1,8 +1,8 @@
-# Replay
+# BetterReplay
 
-Watch back your best scores!
+Watch back your best scores (better)!
 
-## FAQ (Frequently Asked Questions)
+## FAQ
 
 - How do I record a replay?
   - For now, the only way to record replays is with [BeatLeader](https://github.com/BeatLeader/beatleader-qmod/releases) or [ScoreSaber](https://scoresaber.com/quest). All you have to do is play any level with either installed. Replay will add a replay button next to the play button for levels that have a replay.
@@ -20,8 +20,29 @@ Watch back your best scores!
 
 # Credits
 
+[Metalit](https://github.com/Metalit) for making the original Replay mod
+
 [NSGolova](https://github.com/NSGolova) for making the BeatLeader format and recorder, buggy as it may be
 
 [Fern](https://github.com/Fernthedev) for the original version of Hollywood, the renderer
 
 [Sc2ad](https://github.com/Sc2ad) and the rest of the Quest modding people
+
+## Building
+
+# 1. Make your changes in the source files.
+
+# 2. Open a terminal in the project root.
+
+# 3. Rebuild the .so library:
+pwsh ./scripts/build.ps1
+
+# 4. Update the .qmod file (if you changed metadata like version, name, or cover image):
+pwsh ./scripts/createqmod.ps1
+
+# 5. Replace the old mod in your Quest/PC mods folder with the newly generated .qmod file.
+
+# 6. Launch the game and test your changes.
+
+# Note: You only need to re-run CMake or change build configurations if you add new source files or alter build settings. For most tweaks, steps 3–5 are enough.
+
